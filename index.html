@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>首頁 台灣壽司郎</title>
+    <link rel="stylesheet" href="css/main.css">
+
+</head>
+<body>
+    <button onclick="topFunction()" id="toTopBtn" class="btn" title="Go to top">
+        <div>&#5169; </div>
+        <div>TOP</div>
+        </button>
+    <header>
+        <div class="acti-container header-container">
+            <div class="top">
+                <div class="slogan">
+                    <span class="slogan1"></span>
+                    <span class="slogan2"></span>
+                </div>
+
+                <div class="top-right">
+                    <a class="booking-btn btn" href="#">立即訂位</a>
+                    <div class="social-icon">
+                        <div class="social-line"><a href="#"><img src="img/line.svg" width="20px" height="20px"></a></div>
+                        <div class="social-pic-w"><a href="#"><img src="img/line-w.svg" width="20px" height="20px"></a></div>
+                        <div class="social-fb"><a href="#"><img src="img/fb.svg" width="20px" height="20px"></a></div>
+                        <div class="social-pic-w"><a href="#"><img src="img/fb-w.svg" width="20px" height="20px"></a></div>
+                        <div class="social-ig"><a href="#"><img src="img/ig.svg" width="20px" height="20px"></a></div>
+                        <div class="social-pic-w"> <a href="#"><img src="img/ig-w.svg" width="20px" height="20px"></a></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="nav-container">
+            <div id="rwdHeader">
+                <div class="logo"><a href="#"><img src="img/LOGO.svg" height="100px"></a></div>
+                <span class="burger"><img src="img/burger-menu.jpg" width="40px" onclick="handleMenu()"></span>
+            </div>
+
+            <ul id="burgerNavBar" class="justify-content-center rwd-none">
+                <li class="navlist dropdown-box"><a href="#" class="aboutsushiro">關於壽司郎</a>
+                    <div class="navlist dropdown-menu">
+                        <a href="#">公司理念</a>
+                        <a href="#">點餐說明</a>
+                        <a href="#">集點卡相關</a>
+                    </div>
+                </li>
+                <li class="navlist"><a href="#" >店鋪一覽</a></li>
+                <li class="navlist"><a href="#" >菜單</a></li>
+                <li class="navlist"><a href="#" >人才招募</a></li>
+                <li class="navlist"><a href="#" >店鋪募集</a></li>
+                <li class="navlist"><a href="#" >常見問題</a></li>
+                <li class="navlist"><a href="#" title="服務時間: 平日9-18點" >聯絡我們</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <div class="banner"></div>
+
+    <div class="found-shop">
+        <div>
+            <form id="form">
+                <div class="found-shop-flex">
+                    <div class="shop-found-title">
+                        <h2 class="title-h2">
+                            <img src="img/location.svg" width="15px">
+                            店鋪快速搜尋
+                            <div class="title-border shop-title-border"></div>
+                        </h2>    
+                    </div>
+                    <div class="shopselect">
+                        <div class="shopselect1">
+                            <select>
+                                <option>區域選擇</option>
+                                <option>北部</option>
+                                <option>中部</option>
+                                <option>南部</option>
+                            </select>
+    
+                        </div>
+                        <div class="shopselect1">
+                            <select>
+                                <option>縣市選擇</option>
+                            </select>
+    
+                        </div>
+                        <div class="shopselect3">
+                            <button id="searchButton" type="button">搜尋</button>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <div class="menu frame">
+        <div class="menu-header">
+            <h2 class="title-h2">
+                菜單
+                <div class="title-border menu-border"></div>
+            </h2>  
+        </div>
+        <div class="menu-bar">
+            <div><a class="text-dec-none" href="#"><img src="img/menu1.svg"><span>期間限定</span></a></div>
+            <div><a class="text-dec-none" href="#"><img src="img/menu2.svg"><span>外帶菜單</span></a></div>
+            <div><a class="text-dec-none" href="#"><img src="img/menu3.svg"><span>握壽司</span></a></div>
+            <div><a class="text-dec-none" href="#"><img src="img/menu4.svg"><span>軍艦・卷類</span></a></div>
+            <div><a class="text-dec-none" href="#"><img src="img/menu5.svg"><span>麵類・湯類</span></a></div>
+            <div><a class="text-dec-none" href="#"><img src="img/menu6.svg"><span>副餐類</span></a></div>
+            <div><a class="text-dec-none" href="#"><img src="img/menu7.svg"><span>甜點・飲料</span></a></div>
+        </div>
+    </div>
+
+    <div class="activity frame">
+        <div class="acti-container">
+            <div class="div-header">
+                <h2 class="title-h2">
+                    活動公告
+                    <div class="title-border"></div>
+                </h2>  
+            </div>
+    
+            <div class="activity-box justify-content-center">
+                <div class="a-box">
+                    <a href="#">
+                        <div class="act-img-container">
+                            <div class="act-img" id="actImg1"></div>
+                        </div>
+                        <div class="activity-desc">
+                            <p class="act-font">【檔期新品預告📣洄鮭初心】⁣</p>
+                            <div class="title-border act-border-length"></div>
+                            <div class="act-btn-container">
+                                <button class="act-btn btn">more</button>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+    
+                <div class="a-box">
+                    <a href="#">
+                        <div class="act-img-container">
+                            <div class="act-img" id="actImg2"></div>
+                        </div>
+                        <div class="activity-desc">
+                            <p class="act-font">【壽司郎探索地球壽司界重要里程碑❗ 首次公開「鮭山島」🍣🏝】⁣</p>
+                            <div class="title-border act-border-length"></div>
+                            <div class="act-btn-container">
+                                <button class="act-btn btn">more</button>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+    
+                <div class="a-box">
+                    <a href="#">
+                        <div class="act-img-container">
+                            <div class="act-img" id="actImg3"></div>
+                        </div>
+                        <div class="activity-desc">
+                            <p class="act-font">【壽司郎創意吃法⼩⾷堂──正宗鰻魚二吃篇】⁣</p>
+                            <div class="title-border act-border-length"></div>
+                            <div class="act-btn-container">
+                                <button class="act-btn btn">more</button>
+                            </div>
+                        </div>    
+                    </a>   
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="service frame">
+        <div class="acti-container">
+            <div class="row">
+                <div>
+                    <h2>訂位APP
+                        <div class="service-border"></div>
+                    </h2>
+
+                    <div class="ser-out-conatiner"> 
+                        <div class="ser-in-container">
+                            <div>
+                                <div class="service-text">
+                                    <h3>
+                                        <span>壽司郎</span>
+                                        專屬訂位APP
+                                    </h3>
+                                    <div class="app-img">
+                                        <a href="#"><img src="img/ft_app_btn01.png"> </a>
+                                        <a href="#"><img src="img/ft_app_btn02.png"> </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="phone">
+                                <img src="img/phone.png">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="takeawaybox">
+                    <h2>外帶服務
+                        <div class="service-border"></div>
+                    </h2>
+                    <a href="#">
+                        <div class="take-out-frame">
+                            <div class="hover-color">
+                                <p>了解詳情</p>
+                                <div class="title-border"></div>
+                            </div>
+                            <div class="delivery">
+                                <div class="service-text take-out">
+                                    <img src="img/take-out.svg">
+                                    <div>
+                                        <h3>
+                                            <span>來店自取</span>
+                                            外帶餐點美味帶著走
+                                        </h3>
+                                        <p>TAKE OUT</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="takeawaybox">
+                    <h2>外送服務
+                        <div class="service-border"></div>
+                    </h2>
+                    <a class="hover-frame" href="#">
+                        <div class="take-out-frame delivery-frame">
+                            <div class="hover-color">
+                                <p>立即點餐</p>
+                                <div class="title-border"></div>
+                            </div>
+                            <div class="delivery">
+                                <div class="service-text take-out">
+                                    <img src="img/motorcycle.svg">
+                                    <div>
+                                        <h3>
+                                            <span>美味免出門</span>
+                                            外送平台熱情上線
+                                        </h3>
+                                        <p>立即點餐</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="about frame">
+        <div class="acti-container">
+            <div class="about-box">
+                <h2>關於壽司郎
+                    <div class="title-border about-border"></div>
+                </h2>
+            </div>
+
+
+            <div class="hover-box-shopimg">
+                <a href="#">                
+                    <div class="hover-color">
+                        <p>了解詳情</p>
+                        <div class="title-border"></div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div class="social-medialinks frame">
+        <div class="acti-container">
+            <div class="social-box-title">
+                <h2>社交媒體
+                    <div class="title-border"></div>
+                </h2>
+            </div>
+            <div class="social-row">
+                <div>
+                    <a href="#">
+                        <div class="social-frame">
+                            <div class="hover-color">
+                                <p>台湾スシロー</p>
+                                <div class="title-border"></div>
+                            </div>
+                            <img src="img/fb-social.svg" width="80px">
+                            <div class="social-box fb">
+                                <h3>Facebook
+                                    <div>台湾スシロー</div>
+                                </h3>
+                            </div> 
+                        </div>
+                    </a>
+                </div>
+
+                <div>
+                    <a href="#">
+                        <div class="social-frame">
+                            <div class="hover-color">
+                                <p>@sushiro.tw</p>
+                                <div class="title-border"></div>
+                            </div>
+                            <img src="img/ig-social.svg" width="80px">
+                            <div class="social-box ig">
+                                <h3>Instagram
+                                    <div>@sushiro.tw</div>
+                                </h3> 
+                            </div>    
+                        </div>   
+                    </a>
+                </div>
+
+
+                <div>
+                    <a href="#">
+                        <div class="social-frame">
+                            <div class="hover-color">
+                                <p>加入壽司郎</p>
+                                <div class="title-border"></div>
+    
+                            </div>
+                            <img src="img/line-social.svg" width="80px">
+                            <div class="social-box line">
+                                <h3>LINE
+                                    <div>加入壽司郎</div>
+                                </h3>
+                                
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="raise">
+        <div class="raise-img frame">
+            <div class="acti-container raise-box">
+                <div class="social-box-title">
+                    <h2>募集情報
+                        <div class="title-border"></div>
+                    </h2>
+                </div>
+                <div class="raise-btn">
+                    <div class="rec-hover">
+                        <a href="#">
+                            <div class="hover-color">
+                                <p>了解詳情</p>
+                                <div class="title-border"></div>
+                            </div>
+                            <div class="raise-new-frame">人才募集</div>
+                        </a>
+                    </div>
+
+                    <div class="rec-hover">
+                        <a href="#">
+                            <div class="hover-color">
+                                <p>了解詳情</p>
+                                <div class="title-border"></div>
+                            </div>
+                            <div class="raise-new-frame blue">店舖募集</div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <div class="acti-container">
+            <div class="footer-container">
+                <div class="footer-logo">
+                    <img src="img/LOGO.svg" height="100px">
+                    <div>
+                        <div class="slogan1"></div>
+                        <div class="slogan2"></div>
+                    </div>
+                </div>
+                <div class="footer-menu">
+                    <div class="footer-menu-top">
+                        <a href="#" class="footer-btn">立即訂位</a>
+                        <div class="social-icon">
+                            <div class="social-line foot"><a href="#"><img src="img/line.svg" width="20px" height="20px"></a> </div>
+                            <div class="social-fb foot"><a href="#"><img src="img/fb.svg" width="20px" height="20px"></a> </div>
+                            <div class="social-ig foot"><a href="#"><img src="img/ig.svg" width="20px" height="20px"></a> </div>
+                        </div>
+                    </div>
+
+                    <div class="footer-menu-bottom">
+                        <a href="#" >關於壽司郎</a>
+                        <a href="#" >店鋪一覽</a>
+                        <a href="#" >菜單</a>
+                        <a href="#" >人才招募</a>
+                        <a href="#" >店鋪募集</a>
+                        <a href="#" >常見問題</a>
+                        <a href="#" title="服務時間: 平日9-18點" >聯絡我們</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="copyright">
+        <div class="acti-container red-container">
+            <p style="font-size: 9px">© AKINDO SUSHIRO CO., LTD. ALL RIGHTS RESERVED.</p>
+            <div class="copyright-right">            
+                <a href="#">網站使用權須知</a>
+                <span>|</span>
+                <a href="#">隱私政策聲明</a>
+            </div>
+        </div>
+    </div>
+
+    <script src="./js/topbutton.js"></script>
+    <script src="./js/handlemenu.js"></script>
+</body>
+</html>
